@@ -3,7 +3,8 @@
 #include <limits>
 using namespace std;
 
-// 本案例展示C++中的数据类型
+// 本案例展示C++中的数据类型， sizeof()获取数据类型的大小
+// typedef 声明 可以为一个已有的类型取一个新名字，语法为： typedef 类型名称 新名字; 
 int main(){
   cout << "type: \t\t" << "************size**************"<< endl;  
     cout << "bool: \t\t" << "所占字节数：" << sizeof(bool);  
