@@ -6,6 +6,20 @@ using namespace std;  // 这里的using namespace，告诉编译器使用 std命
 int main() {
     cout << "Hello World!\n"; // \n为换行符
     cout << "h\tw" << endl;
+    int i = 0;
+      for( ; ; ) // 在C++中，循环条件为两个 ; ; 时表示为true
+   {
+      cout << ("This loop will run forever. ") << i << endl;
+      i++;
+      if(i > 10){
+         break;
+      }
+   }
+ 
+
+
+
+ 
     return 0; //return 0; 表示终止main函数，并向调用进程返回值0
 }
 
