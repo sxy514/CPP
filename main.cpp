@@ -43,7 +43,7 @@ int main() {
    // 字符串实际上是使用 null 字符 \0 终止的一维字符数组。因此，一个以 null 结尾的字符串，包含了组成字符串的字符。
    char site[7] = {'L', 'E', 'A', 'R', 'N', 'C', '\0'};
    cout << site << endl;
-
+//
  
     return 0; //return 0; 表示终止main函数，并向调用进程返回值0
 }
