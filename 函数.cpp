@@ -39,7 +39,7 @@ void tailFunction() {
     cout << "在main函数前先声明函数,再在尾部将函数进行定义" << endl;
 }
 
-// 函数参数：
+// 函数参数：  形参和实参的概念需了解
 // 信息可以作为 参数传递 给函数，参数充当函数内的变量;
 // 参数在函数名称之后的括号内指定，可以根据需要添加任意数量的参数，只需用逗号分隔符隔开;
 // void functionName(parameter1, parameter2, parameter3) {
