@@ -29,6 +29,38 @@ int MyClass::speed(int maxSpeed){
     return maxSpeed;
 }
 
+// 构造函数的用法: 构造函数在创建类的对象时生效，构造函数与它的类同名
+// 它始终为public, 并且没有任何返回值
+class MyConstructors {
+    public:
+        MyConstructors() {
+            cout << "构造函数在创建类的对象时生效" << endl;
+        }
+};
+// 构造函数也可以采用参数，这可以用于设置属性的初始值
+class Car {
+    public:
+        string brand;
+        string model;
+        int year;
+        Car(string x, string y, int z) {
+            brand = x;
+            model = y;
+            year = z;
+        }
+};
+
+// 构造函数也可以像普通函数一样在类的外部定义
+class ExternalConstructor {
+    public: 
+        int myNumber;
+        ExternalConstructor(int b);
+};
+// 类之外的构造函数定义
+ExternalConstructor::ExternalConstructor(int b) {
+    myNumber = b;
+}
+
 int main() {
     MyClass myObj; // 创建 一个 MyClass 的对象，与Java等语言语法略有区别，不要混淆
     MyClass myObj2; // 一个类可以创建多个对象
@@ -38,6 +70,13 @@ int main() {
     myObj.myString = "Some text";
     myObj.myMethod(); // 调用类中的方法/函数
     cout << myObj.speed(200) << endl; // 调用类中的speed方法
+    MyConstructors myConObj; // 创建类的对象时，构造函数生效，这里输出语句
+    
+    Car myCarObj("BWM","X5",1999); // 创建类的对象时，向构造函数传递参数
+    cout << myCarObj.brand << " " << myCarObj.model << " " << myCarObj.year << endl;
+    
+    ExternalConstructor myExObj(15); // 这是将构造函数写在外时,效果一致
+    cout << myExObj.myNumber << endl;
 
     // 输出属性的值
     cout << myObj.myNum << " " << myObj.myString << endl;
