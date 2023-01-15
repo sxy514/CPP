@@ -5,7 +5,7 @@ using namespace std;
 // 可以将数据（称为参数）传递到函数中，函数定义一次，然后多次使用
 // 如果需要创建函数，请指定函数的名称后跟上括号()
 void myFunction() { // void 表示该函数没有返回值，后续将了解修饰符
-    cout << "myFunction函数内的代码" << endl;
+    cout << "myFunction 函数内的代码" << endl;
 }
 
 void tailFunction(); // 可以先声明函数不定义，将函数放在main函数之后定义
