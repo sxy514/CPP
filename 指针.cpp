@@ -85,5 +85,7 @@ int main() {
     // 输出 food1 变量的新值
     cout << food1 << endl;
 
+    // 空指针 野指针？
+
     return 0;
 }
